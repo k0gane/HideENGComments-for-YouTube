@@ -1,0 +1,12 @@
+{
+    "manifest_version":2,
+    "name":"HideENGCommentsOnStream",
+    "version":"1.0.1",
+    "description":"YouTubeの生配信での日本語以外で表記されているコメントを非表示にします。",
+    "content_scripts":[
+        {
+            "matches":["https://www.youtube.com/watch*"],
+            "js":["hide_engcomeonstream.js"]
+        }
+    ]
+}
